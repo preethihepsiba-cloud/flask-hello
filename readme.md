@@ -29,7 +29,18 @@ Run the following commands:
 ```bash
 git clone https://github.com/preethihepsiba-cloud/flask-hello
 cd flask-hello
-Step 3: Configure Google Cloud
+
+Project Structure
+flask-hello/
+│
+├── app.py
+├── requirements.txt
+├── app.yaml
+└── templates/
+
+---
+
+## Step 3: Configure Google Cloud
 
 Initialize gcloud and follow the prompts:
 
@@ -43,7 +54,9 @@ Project ID
 
 Default region (if asked)
 
-Step 4: Initialize App Engine
+---
+
+## Step 4: Initialize App Engine
 
 Create App Engine application:
 
@@ -52,7 +65,10 @@ gcloud app create --region=us-central1
 Choose region:
 
 us-central1
-Step 5: Deploy the Application
+
+---
+
+##Step 5: Deploy the Application
 
 Deploy the Flask application:
 
@@ -60,7 +76,9 @@ gcloud app deploy
 
 Press Y when prompted.
 
-Step 6: Access Your Application
+---
+
+##Step 6: Access Your Application
 
 After deployment, open the application:
 
@@ -72,7 +90,9 @@ https://[PROJECT_ID].appspot.com
 
 Replace [PROJECT_ID] with your Google Cloud Project ID.
 
-Step 7: Testing and Scaling
+---
+
+##Step 7: Testing and Scaling
 View Logs
 
 Monitor logs in real time:
@@ -83,10 +103,3 @@ Update Application
 After making changes to the code:
 
 gcloud app deploy
-Project Structure
-flask-hello/
-│
-├── app.py
-├── requirements.txt
-├── app.yaml
-└── templates/
